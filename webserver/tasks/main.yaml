@@ -22,10 +22,6 @@
   become: true
   command: cp -r /var/www/html/html/ /var/www/
 
-- name: change mode of /var/www/ 
-  become: true
-  command: chmod 777 /var/www/
-
 - name: Start service httpd, if not started
   become: true
   ansible.builtin.service:
