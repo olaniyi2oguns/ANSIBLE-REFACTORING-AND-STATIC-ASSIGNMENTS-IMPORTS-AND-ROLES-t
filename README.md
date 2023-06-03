@@ -5,6 +5,11 @@
 
 *The objective of this project is to improve the Ansible code by refactoring it and creating assignments, and to learn how to use the imports functionality to effectively re-use previously created playbooks in a new playbook. Refactoring involves making changes to the source code to enhance its readability, maintainability, extensibility, and reduce complexity without changing the expected behavior of the software. The main goal is to organize tasks and reuse them when needed while keeping the infrastructure state the same.*
 
+
+**Architecture of the solution**
+
+![solution](./images/architecture.jpg)
+
 **Step 1: Enhancement of the Jenkins job**
 
 This is a continuation of [workplace-11](https://github.com/olaniyi2oguns/Workplace-11.git). So, before we continue, we need to make some changes to the jenkins job because every new change in the codes creates a separate directory which is not very convenient when we want to run some commands from one place. Also, it occupies more space on the jenkins server with each subsequent change. So there is a need to enhance by creating a new job called "save_artifact". To achieve this we will need to install a "copy Artifact" plugin.
