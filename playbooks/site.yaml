@@ -3,3 +3,4 @@
   hosts: lb
 - import_playbook: ../static-assignments/loadbalancers.yaml
   when: load_balancer_is_requiredl
+
